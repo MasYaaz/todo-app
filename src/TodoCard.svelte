@@ -7,7 +7,7 @@
         onMoveLeft,
         onMoveRight; 
 </script>
-<div class="card mb-3" 
+<div class="card mb-3 is-size-5" 
     transition:slide
     draggable="true"
     role="listitem"
@@ -20,8 +20,9 @@
   }
 >
     <div class="card-content">
-        <div class="columns">
-            <div class="column is-1">
+        <div class="columns is-multiline is-mobile">
+            <div class="tombol column is-1">
+              <span class="icon has-text-danger">
                 {#if listName != 'Tasks'}
                     <button  on:click={onMoveLeft}
                     class="icon-button" 
@@ -29,11 +30,12 @@
                         <i class="fa-solid fa-chevron-left">
                     </button>
                 {/if}
+              </span>
             </div>
-            <div class="column is-9">
+            <div class="text column is-9">
                 {content}
             </div>
-            <div class="column is-1">
+            <div class="tombol column is-1">
                 <span class="icon has-text-danger">
                     <button  on:click={onDelete} 
                     class="icon-button" 
@@ -42,7 +44,8 @@
                     </button>
                 </span>
             </div>
-            <div class="column is-1">
+            <div class="tombol column is-1">
+              <span class="icon has-text-danger">
                 {#if listName != 'Done'}
                     <button  on:click={onMoveRight}
                     class="icon-button" 
@@ -50,6 +53,7 @@
                         <i class="fa-solid fa-chevron-right">
                     </button>
                 {/if}
+                </span>
             </div>
         </div>
     </div>
@@ -60,7 +64,7 @@
     all: unset; /* Hapus semua default styling */
     cursor: pointer;
     color: #aaa;
-    padding: 0.25rem;
+    padding: 0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,11 +80,35 @@
     outline-offset: 2px;
   }
 
-  i.fa-trash {
-    font-size: 0.9rem;
-  }
-
   .card-content{
     cursor:grab;
+  }
+
+   @media screen and (max-width: 600px) {
+    .icon i {
+      font-size: 15px !important;
+    }
+
+    .text{
+      font-size:large;
+      padding: 1px;
+    }
+
+    .tombol{
+      padding: 0 !important;
+    }
+
+  }
+
+  @media screen and (min-width: 601px) {
+    .icon i {
+      font-size: 20px !important;
+    }
+  }
+
+    @media screen and (min-width: 1200px) {
+    .icon i {
+      font-size: 30px !important;
+    }
   }
 </style>

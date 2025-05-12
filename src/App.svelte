@@ -113,10 +113,16 @@ function handleRemoveCard({ todo, listName }) {
   }
   
 </script>
-
+<nav class="navbar" aria-label="main navigation">
+  <div class="navbar-brand">
+    <span class="icon mr-3 ml-6 mb-6 mt-6 is-large">
+      <i class="fa-solid fa-calendar fa-3x"></i>
+    </span>
+    <span class="judul ml-3 mt-5 pt-3 is-size-1">ToDo - App</span>
+  </div>
+</nav>
 <div class="container is-fluid">
-  <h1 class="is-size-1">Todo - App</h1>
-  <div class="columns">
+  <div class="columns is-multiline">
     <!-- Ini buat nampilin data yang udah diinput di CardList -->
     <CardList 
       cards={Taskcards} 
@@ -148,3 +154,19 @@ function handleRemoveCard({ todo, listName }) {
 <svelte:head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
 </svelte:head>
+
+<style>
+  @media screen and (max-width: 600px) {
+    .icon i {
+      font-size: 35px !important;
+    }
+
+    .judul{
+      font-variant: small-caps;
+      font-size: 40px !important;
+      font-weight: 500 !important;
+      margin-top: 29px !important;
+      margin-left: 0px !important;
+    }
+  }
+</style>

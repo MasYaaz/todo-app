@@ -24,13 +24,13 @@
 
 </script>
 
-<div class="column is-4"
+<div class="column is-4 is-multiline"
   on:dragover|preventDefault
   on:drop={handleDrop}
   role="list">
     <div class="card">
-        <div class="card-header">
-          <p class="card-header-title">{listName}</p>
+        <div class="card-header pb-0">
+          <p class="card-header-title pl-5 pb-2 is-size-5">{listName}</p>
         </div>
         <div class="card-content pt-2 pl-3">
 
@@ -53,3 +53,18 @@
         </div>
     </div>
 </div>
+
+<style>
+    @media screen and (min-width: 1200px) {
+    .card-header-title {
+      font-size: 25px !important;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .card-header-title {
+      font-size: 20px !important;
+      padding: 8px;
+    }
+  }
+</style>
