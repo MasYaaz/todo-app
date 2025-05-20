@@ -113,14 +113,16 @@ function handleRemoveCard({ todo, listName }) {
   }
   
 </script>
+
 <nav class="navbar" aria-label="main navigation">
   <div class="navbar-brand">
     <span class="icon mr-3 ml-6 mb-6 mt-6 is-large">
       <i class="fa-solid fa-calendar fa-3x"></i>
     </span>
-    <span class="judul ml-3 mt-5 pt-3 is-size-1">ToDo - App</span>
+    <span class="judul ml-3 mt-5 pt-3 is-size-1">TODO - APP</span>
   </div>
 </nav>
+
 <div class="container is-fluid">
   <div class="columns is-multiline">
     <!-- Ini buat nampilin data yang udah diinput di CardList -->

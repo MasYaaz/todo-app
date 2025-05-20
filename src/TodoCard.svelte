@@ -27,7 +27,7 @@
                     <button  on:click={onMoveLeft}
                     class="icon-button" 
                     aria-label="Pindah ke Samping">
-                        <i class="fa-solid fa-chevron-left">
+                        <i class="fa-solid fa-chevron-left fa-xs">
                     </button>
                 {/if}
               </span>
@@ -102,13 +102,13 @@
 
   @media screen and (min-width: 601px) {
     .icon i {
-      font-size: 20px !important;
+      font-size: 15px !important;
     }
   }
 
     @media screen and (min-width: 1200px) {
     .icon i {
-      font-size: 30px !important;
+      font-size: 20px !important;
     }
   }
 </style>
