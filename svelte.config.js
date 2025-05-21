@@ -8,7 +8,7 @@ export default {
       fallback: null
     }),
     paths: {
-      base: '/NAMA_REPO_GITHUB', // kalau deploy ke GitHub Pages
+      base: '/todo-app-bulma/', // kalau deploy ke GitHub Pages
     }
   }
 };

@@ -1,28 +1,30 @@
-// @ts-nocheck
-import { mount } from 'svelte'
-import './app.css'
-// @ts-ignore
-import App from './App.svelte'
-import 'bulma'
+import "./app.css";
+import { mount } from 'svelte';
+import App from "./App.svelte";
+import "bulma";
 
-const app = mount(App, {
+mount(App, {
   target: document.getElementById('app'),
-})
+});
 
-export default app
+export default App;
 
-      function updateFavicon() {
-            const favicon = document.getElementById('favicon');
-            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-            if (darkModeMediaQuery.matches) {
-                // Jika tema gelap
-                favicon.href = "src/assets/calendar-solid-terang.svg";
-            } else {
-                // Jika tema terang
-                favicon.href = "src/assets/calendar-solid.svg";
-            }
-        }
-        // Panggil fungsi saat halaman dimuat
-        updateFavicon();
-        // Tambahkan event listener untuk mendeteksi perubahan tema
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
+function updateFavicon() {
+  const favicon = document.getElementById("favicon");
+  if (favicon instanceof HTMLLinkElement) {
+    const darkModeMediaQuery = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    );
+    if (darkModeMediaQuery.matches) {
+      favicon.href = "./calendar-solid-terang.svg";
+    } else {
+      favicon.href = "./calendar-solid.svg";
+    }
+  }
+}
+// Panggil fungsi saat halaman dimuat
+updateFavicon();
+// Tambahkan event listener untuk mendeteksi perubahan tema
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", updateFavicon);
