@@ -1,47 +1,44 @@
-# Svelte + Vite
+# TODO - APP (BULMA)
 
-This template should help get you started developing with Svelte in Vite.
+![Foto](src/images/foto-1.png)
 
-## Recommended IDE Setup
+Selamat Datang di Dokumentasi Web saya.
+TODO - APP (BULMA) Ini merupakan web yang memiliki fungsi untuk memudahkan kita dalam mengatur pekerjaan yang akan kita lalui agar
+dapat lebih tersusun dan terjadwal. Web ini kedua saya buat dengan menggunakan framework Vite + Svelte dan Bulma.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## Framework yang digunakan
 
-## Need an official Svelte framework?
+[![Tailwind CSS](https://img.shields.io/badge/bulma-563D7C?style=for-the-badge&logo=tailwindcss&logoColor=white)]() [![Svelte](https://img.shields.io/badge/Svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)]() [![Vite](https://img.shields.io/badge/Svelte-%23f1413d.svg?style=for-the-badge&logo=vite&logoColor=white)]()
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+## Bahasa Pemrograman Yang di Gunakan
 
-## Technical considerations
+[![Bahasa Pemrograman](https://skillicons.dev/icons?i=html,css,js)]()
 
-**Why use this over SvelteKit?**
+[![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)]() [![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]() [![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+## Overview Web Ini
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+Web ini dibagi menjadi tiga segmen yaitu Tasks untuk pekerjaan yang akan kita kerjakan, In Progress untuk pekerjaan yang sedang kita lakukan,
+dan Done untuk pekerjaan yang telah kita selesaikan.Kita dapat menambahkan pekerjaan baru dengan menuliskan pekerjaan di input textbox yang tersedia
+dan menekan tombol tambah kerjaan untuk menambahkannya.
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+![Foto](src/images/foto-5.png)
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+Setelah kita tambahkan ke Tasks kita dapat memindahkannya ke in progress ataupun done kalau pekerjaan kita sudah selesai.Kita dapat memindahkannya
+dengan menggunakan tombol pindah samping.
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+![Foto](src/images/foto-2.png)
 
-**Why include `.vscode/extensions.json`?**
+Selain itu kita juga dapat memindahkannya kesamping dengan fitur drag & drop, canggih kan?
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+![Foto](src/images/foto-3.png)
 
-**Why enable `checkJs` in the JS template?**
+Jika misalnya kamu ingin hapus pekerjaan yang sudah tertera di joblist kamu, kamu bisa lo buat menghapusnya.Caranya adalah dengan menggunakan 
+tombol trash yang ada disetiap list kerjaan yang ada.
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+Web ini juga dapat menyimpan semua joblist yang telah kamu tambahkan sehingga datanya tidak terhapus dan kamu dapat mengaksesnya ketika kamu membuka
+web Todo - App ini.
 
-**Why is HMR not preserving my local component state?**
+Web ini sudah responsif sehingga tampilannya sudah bagus jika dibuka di smartphone maupun di dekstop.
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+![Foto](src/images/foto-4.png)
