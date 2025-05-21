@@ -39,6 +39,11 @@ tombol trash yang ada disetiap list kerjaan yang ada.
 Web ini juga dapat menyimpan semua joblist yang telah kamu tambahkan sehingga datanya tidak terhapus dan kamu dapat mengaksesnya ketika kamu membuka
 web Todo - App ini.
 
-Web ini sudah responsif sehingga tampilannya sudah bagus jika dibuka di smartphone maupun di dekstop.
+Web ini sudah responsif sehingga tampilannya sudah bagus jika dibuka di smartphone maupun di dekstop.Selain itu, web ini bisa menyesuaikan temanya sesuai
+tema dekstop kamu. bisa dark mode bisa light mode.
 
 ![Foto](src/images/foto-4.png)
+
+![Foto](src/images/foto-6.png)
+
+Penasaran? Kamu bisa tinjau langsung webnya [disini.](https://masyaaz.github.io/todo-app-bulma/)
