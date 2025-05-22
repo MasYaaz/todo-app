@@ -8,7 +8,7 @@ dapat lebih tersusun dan terjadwal. Web ini kedua saya buat dengan menggunakan f
 
 ## Framework yang digunakan
 
-[![Tailwind CSS](https://img.shields.io/badge/bulma-563D7C?style=for-the-badge&logo=tailwindcss&logoColor=white)]() [![Svelte](https://img.shields.io/badge/Svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)]() [![Vite](https://img.shields.io/badge/Svelte-%23f1413d.svg?style=for-the-badge&logo=vite&logoColor=white)]()
+[![Tailwind CSS](https://img.shields.io/badge/bulma-563D7C?style=for-the-badge&logo=bulma&logoColor=white)]() [![Svelte](https://img.shields.io/badge/Svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)]() [![Vite](https://img.shields.io/badge/Vite-%23f1413d.svg?style=for-the-badge&logo=vite&logoColor=white)]()
 
 ## Bahasa Pemrograman Yang di Gunakan
 
